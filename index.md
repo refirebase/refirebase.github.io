@@ -3,13 +3,16 @@ title: Introduction
 layout: home
 ---
 
-# Refirebase Documentation
+# Refirebase
 
 Refirebase is a simple library that allows you to use Firebase Realtime Database, Firestore, Storage and Authentication as a state management solution in your JavaScript application.
 
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View it on GitHub][Refirebase Repository]{: .btn .fs-5 .mb-4 .mb-md-0 }
+
 ### Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/refirestore/refirestore#contributing).
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/refirebase/refirebase#contributing).
 
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
@@ -22,3 +25,7 @@ When contributing to this repository, please first discuss the change you wish t
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+[Refirebase Repository]: https://github.com/refirebase/refirebase
