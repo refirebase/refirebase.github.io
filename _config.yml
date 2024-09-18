@@ -5,4 +5,5 @@ theme: just-the-docs
 url: https://refirebase.github.io
 
 aux_links:
-  Organization: https://github.com/refirebase
+  GitHub: https://github.com/refirebase
+  Donate: https://github.com/sponsors/gelzinn
