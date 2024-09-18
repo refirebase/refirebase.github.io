@@ -7,134 +7,17 @@ layout: home
 
 Refirebase is a simple library that allows you to use Firebase Realtime Database, Firestore, Storage and Authentication as a state management solution in your JavaScript application.
 
-## Installation
+### Contributing
 
-Use your favorite package manager to install Refirebase:
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/refirestore/refirestore#contributing).
 
-### NPM
-
-```bash
-npm install refirebase
-```
-
-### Yarn, PNPM, BUN
-
-```bash
-yarn add refirebase
-```
-
-```bash
-pnpm add refirebase
-```
-
-```bash
-bun add refirebase
-```
-
-## Usage
-
-Import the `Refirebase` class:
-
-```javascript
-import { Refirebase } from 'refirebase';
-```
-
-You can use the `Refirebase` class to get the Firebase objects:
-
-```javascript
-const refirebase = new Refirebase({
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_AUTH_DOMAIN',
-  databaseURL: 'YOUR_DATABASE_URL',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_STORAGE_BUCKET',
-  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-  appId: 'YOUR_APP_ID',
-  measurementId: 'YOUR_MEASUREMENT_ID',
-});
-```
-
-Or you can use destructuring to get other objects:
-
-```javascript
-const { db, auth } = new Refirebase({
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_AUTH_DOMAIN',
-  databaseURL: 'YOUR_DATABASE_URL',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_STORAGE_BUCKET',
-  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-  appId: 'YOUR_APP_ID',
-  measurementId: 'YOUR_MEASUREMENT_ID',
-});
-```
-
-> If you prefer to copy empty strings to the `Refirebase` class:
-
-```javascript
-const refirebase = new Refirebase({
-  apiKey: '',
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: '',
-  measurementId: '',
-});
-```
-
-## Examples
-
-### Databases
-
-#### Firestore Database Example
-
-```javascript
-// Import the Refirebase class
-import { db } from '@/config/firebase';
-
-// Get ALL data from the 'users' collection
-const users = db.firestore.get("users");
-```
-
-#### Realtime Database Example
-
-```javascript
-// Import the Refirebase class
-import { db } from '@/config/firebase';
-
-// Get ALL data from the 'users' collection
-const users = db.realtime.get("users");
-```
-
-#### Storage
-
-```javascript
-// Import the Refirebase class
-import { db } from '@/config/firebase';
-
-// Get a file from the storage
-const file = db.storage.get("path/to/file");
-```
-
-### Features
-
-#### Authentication Example
-
-```javascript
-// Import the Refirebase class
-import { auth } from '@/config/firebase';
-
-// Sign in with Google
-const result = await auth.handleProviderSignIn("google");
-
-if (!result) {
-  // Handle error
-}
-
-const user = result.user;
-```
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"></a>
+  </li>
+{% endfor %}
+</ul>
 
 ## License
 
