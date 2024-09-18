@@ -1,6 +1,7 @@
 ---
 title: Storage
-nav_order: 6
+parent: Databases
+nav_order: 7
 ---
 
 # Storage

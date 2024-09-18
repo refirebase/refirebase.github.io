@@ -1,6 +1,7 @@
 ---
 title: Firestore
-nav_order: 4
+parent: Databases
+nav_order: 5
 ---
 
 # Firestore
