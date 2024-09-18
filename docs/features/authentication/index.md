@@ -1,5 +1,6 @@
 ---
 title: Authentication
+parent: Features
 nav_order: 9
 ---
 
